@@ -49,7 +49,7 @@
 </script>
 
 
-<svg class="w-full h-full absolute">
+<svg class="w-full h-full absolute pointer-events-none">
     <path
         d={`M ${from.left} ${from.top} 
             C ${from.left + straight} ${from.top} ${to.left - straight} ${to.top} ${to.left} ${to.top}

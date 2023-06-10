@@ -1,0 +1,32 @@
+[
+	{
+		"client": "uuidv4",
+		"name": "pageview",
+		"url": "http://localhost:3000",
+		"ref": "direct"
+	},
+	{
+		"client": "uuidv4",
+		"name": "pageview",
+		"url": "http://localhost:3000/admin",
+		"ref": "direct"
+	},
+	{
+		"client": "uuidv4",
+		"name": "pageview",
+		"url": "http://localhost:3000/admin",
+		"ref": "direct"
+	},
+	{
+		"client": "uuidv5",
+		"name": "pageview",
+		"url": "http://localhost:3000/admin",
+		"ref": "http://localhost:3000"
+	},
+	{
+		"client": "uuidv5",
+		"name": "pageview",
+		"url": "http://localhost:3000/admin",
+		"ref": "http://localhost:3000"
+	}
+]

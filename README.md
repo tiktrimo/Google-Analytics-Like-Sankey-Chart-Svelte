@@ -1,6 +1,9 @@
+![image](https://github.com/tiktrimo/Google-Analytics-Like-Sankey-Chart-Svelte/assets/59413703/9f0f1e3d-9740-46e7-96a2-afbe14ad4495)
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+
 
 ## Creating a project
 

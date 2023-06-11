@@ -1,11 +1,14 @@
 <script lang="ts">
-    import CavetUnderSmall from '../assets/CavetUnderSmall.svelte';
+	import CavetUnderSmall from '../assets/CavetUnderSmall.svelte';
 	import DotsIcon from '../assets/DotsIcon.svelte';
 	import InformationCircleIcon from '../assets/InformationCircleIcon.svelte';
 	import PlusIcon from '../assets/PlusIcon.svelte';
+	import Date from '../components/Date.svelte';
 	import Draggable from '../components/Draggable.svelte';
 	import Droppable from '../components/Droppable.svelte';
 	import Sankey from '../components/Sankey.svelte';
+
+	let range: {from: Date; to: Date };
 
 </script>
 
@@ -20,16 +23,7 @@
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
-		<div class="w-full h-16 p-4 flex justify-center flex-col">
-			<p
-				class="tracking-tighter text-xs bg-gray-100 text-gray-500 font-semibold w-max rounded-sm px-1"
-			>
-				Custom
-			</p>
-			<div class="text-gray-500 text-sm px-1 cursor-pointer tracking-tighter">
-				Apr 3 - Apr 17, 2023
-			</div>
-		</div>
+		<Date on:time={(e) => (range = e.detail)} />
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
@@ -103,7 +97,7 @@
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
-        <Droppable  title='SEGMENT' label='Drop or select segment' />
+		<Droppable title="SEGMENT" label="Drop or select segment" />
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
@@ -125,7 +119,7 @@
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
-        <Droppable  title='BREAKDOWN' label='Drop or select segment' />
+		<Droppable title="BREAKDOWN" label="Drop or select segment" />
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
@@ -142,7 +136,7 @@
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
-		<Droppable  title='FILTERS' label='Drop or select dimmension or metric' />
+		<Droppable title="FILTERS" label="Drop or select dimmension or metric" />
 
 		<div data-Divider class="w-full h-px bg-gray-200" />
 
@@ -157,27 +151,24 @@
 		<div data-Divider class="w-full h-px bg-gray-200" />
 	</div>
 
-	<div class="flex-1 h-full bg-zinc-50 p-2 flex flex-col" >
-        <div class="w-full h-12 -mb-px z-10">
-            <div class="bg-white rounded-t-lg flex h-full w-max p-2 justify-between items-center border border-b-0 gap-2 text-gray-700">
-                <div class="text-blue-500">
-                    <InformationCircleIcon />
-                </div>
-                <p class="text-sm font-medium">
-                    Path exploration
-                </p>
-                <div class="cursor-pointer">
-                    <DotsIcon />
-                </div>
-            </div>
-        </div>
-        <div class="w-full flex-1 border rounded-lg rounded-tl-none bg-white flex flex-col p-4">
-            <p class="w-full border-b pb-0 box-border text-gray-700 border-gray-400">
-                Page View Event
-            </p>
+	<div class="flex-1 h-full bg-zinc-50 p-2 flex flex-col">
+		<div class="w-full h-12 -mb-px z-10">
+			<div
+				class="bg-white rounded-t-lg flex h-full w-max p-2 justify-between items-center border border-b-0 gap-2 text-gray-700"
+			>
+				<div class="text-blue-500">
+					<InformationCircleIcon />
+				</div>
+				<p class="text-sm font-medium">Path exploration</p>
+				<div class="cursor-pointer">
+					<DotsIcon />
+				</div>
+			</div>
+		</div>
+		<div class="w-full flex-1 border rounded-lg rounded-tl-none bg-white flex flex-col p-4">
+			<p class="w-full border-b pb-0 box-border text-gray-700 border-gray-400">Page View Event</p>
 
-            <Sankey />
-        </div>
-
-    </div>
+			<Sankey />
+		</div>
+	</div>
 </div>

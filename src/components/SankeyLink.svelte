@@ -56,7 +56,7 @@
             L ${to.left} ${to.top + to.height}
             C ${to.left - straight} ${to.top + to.height} ${from.left + straight} ${from.top + from.height * (toVal - fromVal) / 100} ${from.left} ${from.top + from.height * (toVal - fromVal) / 100}`}
         fill-opacity="0.1"
-        fill="skyblue"
+        fill="rgb(147 197 253)"
     />
 </svg>
 

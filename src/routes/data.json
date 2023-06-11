@@ -1,32 +1,621 @@
 [
 	{
-		"client": "uuidv4",
-		"name": "pageview",
-		"url": "http://localhost:3000",
-		"ref": "direct"
+		"n": "pageview",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471761421
 	},
 	{
-		"client": "uuidv4",
-		"name": "pageview",
-		"url": "http://localhost:3000/admin",
-		"ref": "direct"
+		"n": "scroll",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"p": { "y": 545.4545288085938 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471762150
 	},
 	{
-		"client": "uuidv4",
-		"name": "pageview",
-		"url": "http://localhost:3000/admin",
-		"ref": "direct"
+		"n": "click",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"p": { "x": 700, "y": 771 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471762529
 	},
 	{
-		"client": "uuidv5",
-		"name": "pageview",
-		"url": "http://localhost:3000/admin",
-		"ref": "http://localhost:3000"
+		"n": "click",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"p": { "x": 700, "y": 771 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471762643
 	},
 	{
-		"client": "uuidv5",
-		"name": "pageview",
-		"url": "http://localhost:3000/admin",
-		"ref": "http://localhost:3000"
+		"n": "clicking_event",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471762945
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"p": { "x": 707, "y": 789 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471762949
+	},
+	{
+		"n": "clicking_event",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813378
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"p": { "y": 721.8181762695312 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813389
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/",
+		"d": "domain",
+		"r": null,
+		"p": { "x": 710, "y": 793 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813398
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813426
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"p": { "y": 545.4545288085938 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813434
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"p": { "x": 624, "y": 823 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813442
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"p": { "x": 624, "y": 823 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813453
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"p": { "y": 812.7272338867188 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813497
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"p": { "x": 843, "y": 1194 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471813510
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/",
+		"p": { "y": 0 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819735
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/services.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819750
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/services.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "y": 548.1818237304688 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819765
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/services.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "x": 1162, "y": 1250 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819782
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/services.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "y": 0 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819798
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/services.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "x": 1612, "y": 642 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819814
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/services.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "x": 1187, "y": 55 },
+		"c": "uuidv4_content_this_is_for_debugging_1",
+		"t": 1686471819834
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/services.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471823845
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/services.html",
+		"p": { "x": 339, "y": 46 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471823866
+	},
+	{
+		"n": "pageout",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/services.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471823887
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471823917
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "y": 545.4545288085938 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471823951
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "x": 660, "y": 894 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471823974
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "y": 181.81817626953125 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471830495
+	},
+	{
+		"n": "clicking_event",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471830518
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "x": 399, "y": 539 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471830545
+	},
+	{
+		"n": "clicking_event",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855238
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855267
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 607, "y": 1096 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855293
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "y": 0 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855323
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 901, "y": 147 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855353
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 935, "y": 50 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855382
+	},
+	{
+		"n": "pageout",
+		"u": "http://localhost:8000/portfolio.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471855412
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471858946
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "y": 363.6363525390625 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471858973
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "x": 307, "y": 679 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471859013
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "y": 181.81817626953125 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471859047
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "x": 300, "y": 423 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471859082
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/portfolio.html",
+		"p": { "y": 0 },
+		"c": "uuidv4_content_this_is_for_debugging_2",
+		"t": 1686471859118
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471873387
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"p": { "y": 545.4545288085938 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471873421
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"p": { "x": 518, "y": 1025 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471873458
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"p": { "x": 671, "y": 1191 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471873502
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"p": { "x": 634, "y": 1159 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471873541
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"p": { "y": 363.6363525390625 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471873582
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/contact.html",
+		"p": { "x": 729, "y": 1019 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879743
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879777
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "y": 545.4545288085938 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879819
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 681, "y": 1071 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879859
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 739, "y": 1098 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879900
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 732, "y": 1112 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879951
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "y": 0 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471879995
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/about.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 466, "y": 66 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471883845
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471883888
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "x": 761, "y": 1063 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471883939
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "y": 640 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471883987
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "x": 760, "y": 1123 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471884041
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "y": 94.54545593261719 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471884089
+	},
+	{
+		"n": "clicking_event",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471884141
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/about.html",
+		"p": { "x": 394, "y": 539 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471890504
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471890548
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "y": 90.90908813476562 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471947610
+	},
+	{
+		"n": "scroll",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "y": 0 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471947942
+	},
+	{
+		"n": "click",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"p": { "x": 493, "y": 51 },
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471948099
+	},
+	{
+		"n": "pageout",
+		"u": "http://localhost:8000/contact.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471948157
+	},
+	{
+		"n": "pageview",
+		"u": "http://localhost:8000/index.html",
+		"d": "domain",
+		"r": "http://localhost:8000/index.html",
+		"c": "uuidv4_content_this_is_for_debugging_3",
+		"t": 1686471951110
 	}
 ]

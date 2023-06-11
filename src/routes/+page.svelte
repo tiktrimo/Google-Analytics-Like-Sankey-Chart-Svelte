@@ -8,8 +8,69 @@
 	import Droppable from '../components/Droppable.svelte';
 	import Sankey from '../components/Sankey.svelte';
 
-	let range: {from: Date; to: Date };
+	let range: { from: Date; to: Date };
 
+	import data from './data.json';
+
+	type Report = {
+		c: string;
+		n: string;
+		u: string;
+		r: string | null;
+		d: string;
+		t: number;
+		p?: { x?: number; y?: number };
+	};
+
+	const clientGrouped = data.reduce<{ [key: string]: Report[] }>((acc, e) => {
+		if (!acc[e.c]) acc[e.c] = [];
+		acc[e.c].push(e);
+		return acc;
+	}, {});
+	const clients = Object.keys(clientGrouped);
+
+	const sorted: Report[][] = clients.map((client) => {
+		return clientGrouped[client].sort((a: Report, b: Report) => a.t - b.t);
+	});
+
+	let maxLevel = 0;
+	const splited = sorted.reduce<Report[][][]>((acc, e) => {
+		const grouped: Report[][] = [];
+		e.forEach((report: Report) => {
+			if (report.n === 'pageview') grouped.push([]);
+			grouped[grouped.length - 1].push(report);
+		});
+		grouped.forEach((group) => {
+			if (group.length > maxLevel) maxLevel = group.length;
+		});
+		acc.push(grouped);
+		return acc;
+	}, []);
+
+	const levels = splited.reduce<{[key : string] : number}[]>(
+		(acc, clientSpecificNodes) => {
+			clientSpecificNodes.forEach((nodes) => {
+				nodes.forEach((node, index) => {
+					if (!acc[index][node.n]) acc[index][node.n] = 0;
+					acc[index][node.n]++;
+				});
+			});
+
+			return acc;
+		},
+		new Array(maxLevel).fill(false).map(() => ({}))
+	);
+
+	console.log(splited)
+
+	// levels.map((level) => {
+	// 	const events = Object.keys(level);
+	// 	const nodes = events.map((event) => {
+	// 		return {
+	// 			name : event,
+	// 		}
+	// 	})
+	// })
 </script>
 
 <div class="w-full h-screen flex font-roboto select-none">

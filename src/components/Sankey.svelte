@@ -5,7 +5,7 @@
 		nodes: { name: string; value: number; acc: number; parent: number; show : boolean, ref?: HTMLElement }[];
 	}[];
 
-	const levels: Levels = [
+	export let levels: Levels = [
 		{
 			group: 'Event name',
 			nodes: [{ name: 'session_start', parent: -1, value: 28761, acc: 0, show : true }]
@@ -29,6 +29,7 @@
 			]
 		}
 	];
+	levels[0].nodes[0].show = true;
 
     let render = 0;
     

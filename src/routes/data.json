@@ -3,7 +3,7 @@
 		"n": "pageview",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471761421
 	},
@@ -11,7 +11,7 @@
 		"n": "scroll",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"p": { "y": 545.4545288085938 },
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471762150
@@ -20,7 +20,7 @@
 		"n": "click",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"p": { "x": 700, "y": 771 },
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471762529
@@ -29,7 +29,7 @@
 		"n": "click",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"p": { "x": 700, "y": 771 },
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471762643
@@ -38,7 +38,7 @@
 		"n": "clicking_event",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471762945
 	},
@@ -46,7 +46,7 @@
 		"n": "click",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"p": { "x": 707, "y": 789 },
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471762949
@@ -55,7 +55,7 @@
 		"n": "clicking_event",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471813378
 	},
@@ -63,7 +63,7 @@
 		"n": "scroll",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"p": { "y": 721.8181762695312 },
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471813389
@@ -72,7 +72,7 @@
 		"n": "click",
 		"u": "http://localhost:8000/",
 		"d": "domain",
-		"r": null,
+		"r": "direct",
 		"p": { "x": 710, "y": 793 },
 		"c": "uuidv4_content_this_is_for_debugging_1",
 		"t": 1686471813398

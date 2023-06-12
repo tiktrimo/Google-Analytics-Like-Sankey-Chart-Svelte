@@ -16,7 +16,7 @@
 		c: string;
 		n: string;
 		u: string;
-		r: string | null;
+		r: string;
 		d: string;
 		t: number;
 		p?: { x?: number; y?: number };
@@ -34,34 +34,109 @@
 	});
 
 	let maxLevel = 0;
-	const splited = sorted.reduce<Report[][][]>((acc, e) => {
-		const grouped: Report[][] = [];
-		e.forEach((report: Report) => {
-			if (report.n === 'pageview') grouped.push([]);
-			grouped[grouped.length - 1].push(report);
+	const paths = sorted
+		.reduce<string[]>((acc, e) => {
+			const grouped: string[][] = [];
+			e.forEach((report: Report) => {
+				if (report.n === 'pageview') grouped.push([]);
+				grouped[grouped.length - 1].push(report.n);
+			});
+			grouped.forEach((group) => {
+				if (group.length > maxLevel) maxLevel = group.length;
+			});
+			return [...acc, ...grouped.map((group) => group.join('.'))];
+		}, [])
+		.sort((a, b) => a.split('.').length - b.split('.').length);
+
+	const pathIncludedLevels: any[] = new Array(maxLevel).fill(false).map(() => []);
+	paths.forEach((path) => {
+		const eventNames = path.split('.');
+		eventNames.forEach((eventName, depth) => {
+			const parentPath = eventNames.slice(0, depth).join('.');
+			const foundNode = pathIncludedLevels[depth].find(
+				(node: any) => node.parentPath === parentPath && node.name === eventName
+			);
+
+			if (!foundNode)
+				pathIncludedLevels[depth].push({
+					name: eventName,
+					parent: -1,
+					parentPath: parentPath,
+					value: 1,
+					show: false,
+					acc: 0
+				});
+			else foundNode.value++;
 		});
-		grouped.forEach((group) => {
-			if (group.length > maxLevel) maxLevel = group.length;
+	});
+
+	const sortedPathIncludedLevels = pathIncludedLevels.reduce((acc, nodes, index) => {
+		if (index === 0) return [nodes];
+
+		const parents = acc[index - 1].map((parentNode: any) => {
+			if (parentNode.parentPath !== '') return `${parentNode.parentPath}.${parentNode.name}`;
+			else return parentNode.name;
 		});
-		acc.push(grouped);
+
+		const groupByParent = parents.map((parent : string) => {
+			return nodes.filter((node : any) => node.parentPath === parent);
+		})
+
+		groupByParent.forEach((group: any) => {
+			group.sort((a: any, b: any) => b.value - a.value);
+		});
+		groupByParent.forEach((group: any) => {
+			let acc = 0;
+			group.forEach((node: any) => {
+				node.acc = acc;
+				acc += node.value;
+			});
+		});
+
+		const sortedNodes = groupByParent.flat(1);
+		sortedNodes.forEach((node: any) => {
+			node.parent = parents.indexOf(node.parentPath);
+		});
+		acc.push(sortedNodes);
+		
 		return acc;
 	}, []);
 
-	const levels = splited.reduce<{[key : string] : number}[]>(
-		(acc, clientSpecificNodes) => {
-			clientSpecificNodes.forEach((nodes) => {
-				nodes.forEach((node, index) => {
-					if (!acc[index][node.n]) acc[index][node.n] = 0;
-					acc[index][node.n]++;
-				});
-			});
+	console.log(sortedPathIncludedLevels)
 
-			return acc;
-		},
-		new Array(maxLevel).fill(false).map(() => ({}))
-	);
+	const built = sortedPathIncludedLevels.map((nodes : any) => {
+		return {
+			eventName: 'Event Name',
+			nodes: nodes
+		};
+	});
 
-	console.log(splited)
+	// const levels: { [key: string]: {count : number, parent : string | undefined} }[] =
+	// 	new Array(maxLevel).fill(false).map(() => ({}));
+	// splited.forEach((grouped) => {
+	// 	grouped.forEach((session) => {
+	// 		session.forEach((event, index) => {
+	// 			if (!levels[index][event.n]) levels[index][event.n] = { count: 0, parent: undefined };
+	// 			levels[index][event.n].count++;
+
+	// 			if(index > 0) levels[index][event.n].parent = session[index - 1].n;
+	// 		});
+	// 	});
+	// });
+
+	// const levels = splited.reduce<{[key : string] : number}[]>(
+	// 	(acc, clientSpecificNodes) => {
+	// 		clientSpecificNodes.forEach((nodes) => {
+	// 			nodes.forEach((node, index) => {
+	// 				if (!acc[index][node.n]) acc[index][node.n] = 0;
+	// 				acc[index][node.n]++;
+	// 			});
+	// 		});
+
+	// 		return acc;
+	// 	},
+	// 	new Array(maxLevel).fill(false).map(() => ({}))
+	// );
 
 	// levels.map((level) => {
 	// 	const events = Object.keys(level);
@@ -229,7 +304,7 @@
 		<div class="w-full flex-1 border rounded-lg rounded-tl-none bg-white flex flex-col p-4">
 			<p class="w-full border-b pb-0 box-border text-gray-700 border-gray-400">Page View Event</p>
 
-			<Sankey />
+			<Sankey levels={built} />
 		</div>
 	</div>
 </div>
